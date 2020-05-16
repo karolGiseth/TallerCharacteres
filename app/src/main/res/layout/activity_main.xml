@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6EEEF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#EBF3EB"
+        android:gravity="center_horizontal"
+        android:text="El Chavo"
+        android:textColor="#151111"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewName"
+        app:layout_constraintVertical_weight="1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/ImageBtnChavo"
+                android:layout_width="187dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:background="#BFE3E4"
+                android:padding="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/chavo"
+
+                android:tag="guardiansofthegalaxyvol2" />
+
+            <ImageButton
+                android:id="@+id/ImageBtnDonRamon"
+                android:layout_width="125dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:background="#E4F5F6"
+                android:padding="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/donramon"
+
+                android:tag="thorragnarok" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/ImageBtnChilindrina"
+                android:layout_width="171dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:background="#E2F0F1"
+                android:padding="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/chilindrina"
+
+                android:tag="guardiansofthegalaxyvol2" />
+
+            <ImageButton
+                android:id="@+id/ImageBtnBarriga"
+                android:layout_width="186dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#E4F0F1"
+                android:padding="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/barriga" />
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

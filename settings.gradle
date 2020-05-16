@@ -1,0 +1,2 @@
+rootProject.name='TallerCharacteres'
+include ':app'

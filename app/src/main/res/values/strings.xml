@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Taller4</string>
+
+
+    // String Detail activity
+
+    <string name="Name">NAME</string>
+    <string name="Description">Description</string>
+
+
+</resources>
